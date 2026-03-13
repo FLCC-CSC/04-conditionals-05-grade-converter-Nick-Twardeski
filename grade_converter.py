@@ -1,8 +1,8 @@
 # FILE NAME - grade_converter.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Nick T
+# DATE: 3/13/26
+# BRIEF DESCRIPTION:  Grade Converter Lab
 
 
 
@@ -15,22 +15,34 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
-print('===== Grade Converter =====')
+def main():
+    grade_converter()
+      
 
-percent = int(input('Enter a numerical grade (1-100): '))
+def grade_converter():
 
-if percent > 100:
-    print('A+')
-elif percent >= 90:
+   print('===== Grade Converter =====')
+
+   grade = int(input('Enter a numerical grade (1-100):'))
+
+   if grade > 100:
+     print('A+')
+   elif grade >= 90:
     print('A')
-elif percent >= 80:
+   elif grade >= 80:
     print('B')
-elif percent >= 70:
+   elif grade >= 70:
     print('C')
-elif percent >= 65:
+   elif grade >= 65:
     print('D')
-else:
+   elif grade < 65:
     print('F')
+
+
+
+
+main()
+
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
@@ -86,7 +98,7 @@ D
    doing this lab?
 
 
-
+Be carful not to forget that any negative grade would also need to be an F
 
 
 
